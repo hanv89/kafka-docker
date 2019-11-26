@@ -14,8 +14,8 @@ services:
       - "127.0.0.1:9092:9092"
     environment:
       KAFKA_BROKER_ID: 0
-      KAFKA_ADVERTISED_HOST_NAME: 210.211.99.11
-      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_HOST_NAME: aip-kafka
+      KAFKA_ZOOKEEPER_CONNECT: aip-zookeeper:2181
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
 networks:
