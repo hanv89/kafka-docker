@@ -1,13 +1,13 @@
 version: '2'
 services:
   zookeeper:
-    container_name: zookeeper
+    container_name: aip-zookeeper
     restart: unless-stopped
     image: wurstmeister/zookeeper
     ports:
       - "127.0.0.1:2181:2181"
   kafka:
-    container_name: kafka
+    container_name: aip-kafka
     restart: unless-stopped
     build: .
     ports:
